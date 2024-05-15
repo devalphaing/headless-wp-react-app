@@ -1,0 +1,23 @@
+.head-container{
+    padding: 7rem 15rem 4rem 15rem;
+}
+
+.head-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.head-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: monospace;
+    padding: 2rem 1rem 1rem 1rem;
+    color: #5f6368;
+}

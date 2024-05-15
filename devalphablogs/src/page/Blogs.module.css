@@ -1,0 +1,29 @@
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    font-size: 2rem;
+    background-color: bisque;
+}
+
+.blogContainer{
+    padding: 1rem 2rem;
+}
+
+.heading{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+.heading:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.excerpt{
+    font-family: monospace;
+    padding: 2rem 0rem;
+    color: #5f6368;
+}

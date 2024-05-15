@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styles from './Nav.module.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -6,20 +6,16 @@ const Nav = ()=> {
 
     const navigate = useNavigate();
 
-    const handleClick = () => {
-        navigate('/about'); // Navigate to the about route
-    };
-
     return (
     <div className={styles['container']}>
         <div className={styles['nav-container']}>
             <div className={styles['home'] + " " + styles['nav-click']} onClick={() => {navigate('/')}}>
                 Home
             </div>
-            <div className={styles['blogs'] + " " + styles['nav-click']}>
+            <div className={styles['blogs'] + " " + styles['nav-click']} onClick={() => {navigate('/blogs')}}>
                 Blogs
             </div>
-            <div className={styles['about'] + " " + styles['nav-click']} onClick={handleClick}>
+            <div className={styles['about'] + " " + styles['nav-click']} onClick={() => {navigate('/about')}}>
                 About                
             </div>
         </div>
