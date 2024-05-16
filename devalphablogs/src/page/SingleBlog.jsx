@@ -1,14 +1,10 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment } from "react";
 import styles from "./SingleBlog.module.css";
 import { useLocation } from "react-router-dom";
 
 const SingleBlog = ({ data }) => {
   const location = useLocation();
   const receivedData = location.state;
-
-  useEffect(() => {
-    console.log(receivedData);
-  }, []);
 
   const removeHtmlTags = (text) => {
     return text.replace(/<[^>]*>/g, "");

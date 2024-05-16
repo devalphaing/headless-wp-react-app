@@ -13,7 +13,6 @@ const About = () => {
   const getDataFromApi = async()=> {
     const response = await getPageContent('about');
     setPageContent(removeHtmlTags(response.data[0].content.rendered));
-    console.log(response);
   }
 
   const removeHtmlTags = (text)=> {

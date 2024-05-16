@@ -16,7 +16,6 @@ const Blogs = () => {
     try{
       const response = await getPosts();
       setPageContent(response.data);
-      console.log(response.data);
     }catch(err){
       console.log(err);
     }
@@ -29,7 +28,6 @@ const Blogs = () => {
 
   const clickHandler = (item)=> {
     navigate('/blog', { state: item });
-    console.log(item);
   }
 
   return (
