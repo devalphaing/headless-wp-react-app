@@ -1,0 +1,19 @@
+.heading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: bisque;
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: monospace;
+    padding: 3rem;
+    color: #5f6368;
+}

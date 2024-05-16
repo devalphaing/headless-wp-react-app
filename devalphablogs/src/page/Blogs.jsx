@@ -1,9 +1,12 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { getPosts } from "../api/getData";
 import styles from "./Blogs.module.css";
+import { useNavigate } from 'react-router-dom';
 
 const Blogs = () => {
   const [pageContent, setPageContent] = useState(null);
+  const navigate = useNavigate();
+
 
   useEffect(() => {
     getDataFromApi();
@@ -25,6 +28,7 @@ const Blogs = () => {
   }  
 
   const clickHandler = (item)=> {
+    navigate('/blog', { state: item });
     console.log(item);
   }
 
@@ -39,7 +43,7 @@ const Blogs = () => {
           <div className={styles["excerpt"]}>
             {removeHtmlTags(item.excerpt.rendered)}...
           </div>
-          <hr />
+          <hr></hr>
         </div>
       ))}
     </Fragment>
